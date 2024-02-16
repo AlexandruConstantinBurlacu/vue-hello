@@ -11,8 +11,21 @@
     <!-- inserisco vue framework -->
     <script src="https://unpkg.com/vue@3"></script>
 
+    <div id="app">
+        {{ messaggio }}
+    </div>
     
+    <script>
+        const { createApp } = Vue
 
+        createApp({
+            data() {
+                return {
+                    messaggio: 'Ciao a  tutti'
+                }
+            }
+        }).mount('#app')
+    </script>
 
 
 
